@@ -1,106 +1,70 @@
-# 📊 Retail Performance Dashboard — Power BI
+# Weekly Business Performance Dashboard (Power BI)
 
-## 🧠 Overview
+## Project Overview
+This project presents a weekly business performance dashboard built using **Power BI**.  
+The objective is to monitor operational growth and user engagement through four core business metrics.
 
-This project rebuilds a business analytics dashboard into a proper Business Intelligence model using Power BI.
-
-The dashboard analyzes the retail behavioral funnel:
-
-* App Users
-* Store Views
-* Product Shares
-* Orders
-* Revenue
-
-Instead of spreadsheet aggregation, the project implements a semantic data model, relationships, and DAX measures to produce scalable analytics.
+The dashboard transforms multiple raw tables into a structured data model and provides time-based analysis using weekly aggregation.
 
 ---
 
-## 🎯 Objective
+## Metrics Analyzed
+- **Weekly Revenue**
+- **Weekly Orders**
+- **Weekly Unique Users**
+- **Weekly Active Users**
 
-To transform spreadsheet-based analytics into a BI data model that supports consistent metrics and reusable calculations.
-
-This simulates how analytics evolves in real companies:
-
-Excel Analysis → Data Model → BI Dashboard
-
----
-
-## 🗂 Data Model
-
-Multiple event tables are modeled into a star-schema structure.
-
-### Fact Tables
-
-* Orders
-* Revenue
-* App Activity
-
-### Dimension Tables
-
-* Date
-* Store
-* User
-
-Relationships are built using keys such as User ID and Date.
+These metrics help evaluate business growth, platform engagement, and purchasing behavior over time.
 
 ---
 
-## 📐 Measures (DAX)
-
-Key business metrics are created using DAX:
-
-* Weekly Active Users
-* Unique Users
-* Orders Count
-* Revenue
-* Conversion Funnel Metrics
-
-The model separates:
-
-* Events (activity count)
-* Users (distinct count)
+## Key Skills Demonstrated
+- Data Modeling (Star Schema)
+- Date Table Engineering
+- DAX Measures
+- Weekly Time Aggregation
+- Business KPI Visualization
+- Analytical Storytelling
 
 ---
 
-## 📊 Dashboard Features
+## Data Model
+The dashboard is built using multiple related tables:
 
-* Weekly trend analysis
-* Funnel behavior monitoring
-* Cross-filtering across stores
-* Interactive time filtering
-* Consistent metric definitions
+| Table | Description |
+|------|------|
+| Orders | Transaction records |
+| Order Revenue | Monetary values per order |
+| Store View | User visit activity |
+| Product Link Shared | Engagement activity |
+| User DB | User information |
+| Date Table | Weekly time intelligence & grouping |
 
----
-
-## 🔍 Business Insights
-
-The dashboard identifies performance changes across the funnel:
-
-Traffic ↓ → Orders ↓ → Revenue ↓
-Indicating acquisition issue rather than transaction failure.
+Relationships were created to enable weekly trend analysis across all business activities.
 
 ---
 
-## 🛠 Tools Used
-
-* Power BI
-* Power Query (data transformation)
-* DAX Measures
-* Data Modeling (Star Schema)
+## Dashboard Preview
+![Dashboard Preview](dashboard/dashboard_preview.png)
 
 ---
 
-## 🧩 Key Skills Demonstrated
-
-* Data modeling
-* Metric standardization
-* DAX calculation logic
-* Analytical thinking
-* BI dashboard design
+## Example Insights
+- Detect weekly sales trends
+- Observe engagement vs transaction movement
+- Identify growth or decline periods
+- Compare activity vs purchasing behavior
 
 ---
 
-## 📁 Files
+## Tools Used
+- Power BI
+- DAX
+- Data Modeling
+- Excel Dataset
 
-`Retail_Performance.pbix` — full interactive dashboard
+---
+
+## Author
+**Bayu Chandra Putra**  
+Data Analyst 
